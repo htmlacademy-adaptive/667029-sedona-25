@@ -1,0 +1,52 @@
+.text {
+  text-transform: uppercase;
+  font-weight: 400;
+
+  &--heading {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  &--description {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  &--information {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  &--input {
+    text-transform: none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  &--additional {
+    color: $opacity-grey-60;
+    font-size: 12px;
+    line-height: 21px;
+  }
+
+  &--photo-heading {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  &--photo-author {
+    text-transform: none;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  &--likes {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
