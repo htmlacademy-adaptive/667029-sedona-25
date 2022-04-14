@@ -37,9 +37,11 @@
 
     <main class="page__main page-main">
       <section class="page-main__intro intro">
-        <h1 class="intro__title text text--heading">Фото и видео</h1>
-        <p class="intro__description text text--description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-        <img class="intro__image image" src="#" width="902" height="214" alt="Вид на окрестности Седоны">
+        <div class="intro__wrapper catalog-intro">
+          <h1 class="catalog-intro__title text text--heading">Фото и видео</h1>
+          <p class="catalog-intro__description text text--description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        </div>
+        <img class="catalog-intro__image image" src="#" width="902" height="214" alt="Вид на окрестности Седоны">
       </section>
 
       <section class="page-main__photo photo">
@@ -58,7 +60,7 @@
             </div>
           </li>
           <li class="photo-list__item item-photo">
-            <img class="item-photo__ image" src="#" width="280" height="280" alt="Цветы на фоне гор">
+            <img class="item-photo__image image" src="#" width="280" height="280" alt="Цветы на фоне гор">
             <div class="item-photo__information image-info">
               <p class="image-info__title text text--photo-heading">Местная растительность</p>
               <p class="image-info__author text text--photo-author">Автор фото: Сергей</p>
@@ -94,10 +96,11 @@
       </section>
 
       <section class="page-main__video video">
-        <h2 class="visually-hidden">Видеоматериалы о Седоне</h2>
-        <p class="video__title text text--heading">Все еще сомневаетесь?</p>
-        <p class="video__description text text--description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-
+        <div class="video__text-wrapper video-text-wrapper">
+          <h2 class="visually-hidden">Видеоматериалы о Седоне</h2>
+          <p class="video__title text text--heading">Все еще сомневаетесь?</p>
+          <p class="video__description text text--description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        </div>
         <div class="video__player player">
           <video class="player__media media">
             <source src="#">
