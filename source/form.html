@@ -36,11 +36,11 @@
     </header>
 
     <main class="page__main page-main">
-      <section class="page-main__intro intro">
-        <div class="intro__wrapper">
-          <h1 class="intro__title text text--heading">Оставьте свой отзвыв</h1>
-          <p class="intro__description text text--description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых вами достопримечательностях</p>
-          <img class="intro__image image" src="#" width="902" height="214" alt="Вид на окрестности Седоны">
+      <section class="page-main__intro review-intro">
+        <div class="review-intro__wrapper">
+          <h1 class="review-intro__title text text--heading">Оставьте свой отзвыв</h1>
+          <p class="review-intro__description text text--description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых вами достопримечательностях</p>
+          <img class="review-intro__image image" src="#" width="902" height="214" alt="Вид на окрестности Седоны">
         </div>
       </section>
 
@@ -51,7 +51,7 @@
           <fieldset class="review-form__group form-group form-group--personal">
             <legend class="form-group__title text text--heading">Представьтесь:</legend>
 
-            <ul class="form-group__list">
+            <ul class="form-group__list field-list">
               <li class="form-group__item field">
                 <label class="field__label" for="first-name">
                   <span class="field__title text text--description">Имя*:</span>
@@ -78,7 +78,7 @@
           <fieldset class="review-form__group form-group form-group--contacts">
             <legend class="form-group__title text text--heading">Контактная информация:</legend>
 
-            <ul class="form-group__list">
+            <ul class="form-group__list field-list">
               <li class="form-group__item field">
                 <label class="field__label" for="phone">
                   <span class="field__title text text--description">Контактный телефон*:</span>
@@ -100,7 +100,7 @@
           <fieldset class="review-form__group form-group form-group--impression">
             <legend class="form-group__title text text--heading">Ваше общее впечатление:</legend>
 
-            <ul class="form-group__list">
+            <ul class="form-group__list field-list">
               <li class="form-group__item radio">
                 <input class="radio__input" id="impression-positive" name="impression" type="radio" value="positive" checked>
                 <label class="radio__label" for="impression-positive">
@@ -127,7 +127,7 @@
           <fieldset class="review-form__group form-group form-group--sights">
             <legend class="form-group__title text text--heading">Посещенные достопримечательности:</legend>
 
-            <ul class="form-group__list">
+            <ul class="form-group__list field-list">
               <li class="form-group__item checkbox">
                 <input class="checkbox__input" id="diablo-bridge" name="diablo-bridge" type="checkbox" checked>
                 <label class="checkbox__label" for="diablo-bridge">
@@ -161,7 +161,7 @@
           <fieldset class="review-form__group form-group form-group--additional-text">
             <legend class="form-group__title text text--heading">Опишите свои эмоции:</legend>
             <div class="form-group__wrapper field">
-              <textarea class="form-group__input text-input" id="additional-text" name="additional-text" rows="6" placeholder="Опишите подробно все свои восторги"></textarea>
+              <textarea class="form-group__input text-input text-input--additional" id="additional-text" name="additional-text" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
               <label class="visually-hidden" for="additional-text">Описание посещения в свободной форме</label>
             </div>
           </fieldset>
