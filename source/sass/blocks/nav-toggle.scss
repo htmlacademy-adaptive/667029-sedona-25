@@ -1,6 +1,8 @@
 .nav-toggle {
-  padding: 20px;
-
   background-color: transparent;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

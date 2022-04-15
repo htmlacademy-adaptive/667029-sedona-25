@@ -9,6 +9,11 @@
       color: $color-white;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .reason-item:not(.reason-item--large) {
@@ -25,5 +30,24 @@
 .reason-item:not(.reason-item--large):not(:last-child) {
   .reason-wrapper {
     border-bottom: 1px solid $color-grey-275;
+  }
+}
+
+.reason-item__image {
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 512px;
+    grid-column: span 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
+}
+
+.reason-item__inner-list {
+  @media (min-width: $tablet-width) {
+    grid-column: span 3;
   }
 }
