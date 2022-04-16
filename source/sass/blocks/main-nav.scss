@@ -1,3 +1,20 @@
+.main-nav {
+  display: grid;
+}
+
+.main-nav__toggle {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  z-index: 2;
+  margin: 0 0 auto auto;
+}
+
 .main-nav__list {
   margin: 0;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }

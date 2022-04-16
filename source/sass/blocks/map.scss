@@ -1,6 +1,12 @@
-.map .image {
-  background-image: url("../../img/map-mobile.png");
-  background-repeat: no-repeat;
+.map__image {
+  width: 320px;
   min-height: 350px;
-  min-width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }

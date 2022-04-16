@@ -1,8 +1,14 @@
 .text-input {
   font-family: "PT Sans", "Arial", sans-serif;
+  border: none;
   background-color: $color-grey-100;
   color: $color-black;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+}
+
+.text-input--additional {
+  padding: 16px;
+  min-width: calc(100% - 40px);
 }

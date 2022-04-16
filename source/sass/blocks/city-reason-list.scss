@@ -1,5 +1,11 @@
 .city-reason-list {
-  padding: 0;
+  padding: 25px 20px 55px 20px;
 
   list-style-type: none;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

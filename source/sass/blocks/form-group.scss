@@ -1,0 +1,36 @@
+.form-group {
+  border: none;
+  border-top: 1px solid $color-grey-225;
+  margin: 0;
+
+  .text--heading {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+}
+
+.form-group--personal {
+  padding: 25px 20px 40px 20px;
+}
+
+.form-group--contacts {
+  padding: 25px 20px 35px 20px;
+}
+
+.form-group--impression {
+  padding: 25px 20px 25px 20px;
+}
+
+.form-group--sights {
+  padding: 25px 20px 25px 20px;
+}
+
+.form-group--additional-text {
+  padding: 25px 20px 30px 20px;
+}
+
+.form-group__list {
+  margin: 0;
+}

@@ -3,17 +3,28 @@
     background-color: $color-blue-125;
     margin-right: 0;
     margin-left: 0;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 35px 20px 40px 20px;
 
     .text {
       color: $color-white;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .reason-item:not(.reason-item--large) {
   background-color: $color-grey-150;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  .reason-wrapper {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 }
 
 .reason-item:not(.reason-item--large):not(:last-child) {
@@ -22,7 +33,21 @@
   }
 }
 
+.reason-item__image {
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 512px;
+    grid-column: span 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
+}
+
 .reason-item__inner-list {
-  margin-right: 20px;
-  margin-left: 20px;
+  @media (min-width: $tablet-width) {
+    grid-column: span 3;
+  }
 }
