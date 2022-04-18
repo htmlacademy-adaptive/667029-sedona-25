@@ -1,19 +1,34 @@
 .intro {
   display: flex;
   flex-direction: column;
-  max-width: 320px;
 }
 
 .intro__wrapper {
   order: 2;
+  width: 280px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 728px;
+    width: 648px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1160px;
+    width: 880px;
   }
+}
+
+.intro__wrapper.review-intro {
+  margin-top: 65px;
+  margin-bottom: 60px;
+}
+
+.intro__wrapper.catalog-intro {
+  margin-top: 35px;
+  margin-bottom: 45px;
+}
+
+.intro__image-wrapper {
+  background-color: $color-brown-700;
 }
 
 .intro__image {
