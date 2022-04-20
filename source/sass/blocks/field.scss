@@ -1,13 +1,11 @@
-.field {
-  .phone-icon {
-    background-color: $color-grey-190;
-    width: 58px;
-    min-height: 58px;
-  }
+.field .phone-icon {
+  background-color: $color-grey-190;
+  width: 58px;
+  min-height: 58px;
+}
 
-  .email-icon {
-    background-color: $color-grey-190;
-    width: 58px;
-    min-height: 58px;
-  }
+.field .email-icon {
+  background-color: $color-grey-190;
+  width: 58px;
+  min-height: 58px;
 }

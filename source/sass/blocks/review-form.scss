@@ -1,0 +1,20 @@
+.review-form {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.review-form__group:not(:first-child):not(:nth-child(2)) {
+  @media (min-width: $tablet-width) {
+    grid-column: span 2;
+  }
+}
+
+.review-form__actions {
+  @media (min-width: $tablet-width) {
+    grid-column: span 2;
+  }
+}

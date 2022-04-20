@@ -1,0 +1,22 @@
+.body-content {
+  background-color: $color-white;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+  box-sizing: border-box;
+  display: grid;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
+}

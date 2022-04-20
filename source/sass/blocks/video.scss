@@ -2,7 +2,24 @@
   display: grid;
 }
 
+.video__text-wrapper {
+  @media (min-width: $tablet-width) {
+    margin-top: 58px;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 62px;
+    margin-bottom: 70px;
+  }
+}
+
 .video__player {
-  margin-right: 20px;
-  margin-left: 20px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+  }
 }

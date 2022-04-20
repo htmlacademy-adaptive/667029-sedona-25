@@ -1,11 +1,45 @@
+.message__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .message .button {
   font-size: 18px;
 }
 
 .message--error {
-  padding: 45px 20px 35px 20px;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+  }
+}
+
+.message--error .message__wrapper {
+  width: 280px;
+  margin: 48px auto 35px auto;
+
+  @media (min-width: $tablet-width) {
+    width: 360px;
+    margin: 55px auto 50px auto;
+  }
 }
 
 .message--success {
-  padding: 40px 20px 20px 20px;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 640px;
+  }
+}
+
+.message--success .message__wrapper {
+  width: 280px;
+  margin: 43px auto 20px auto;
+
+  @media (min-width: $tablet-width) {
+    width: 600px;
+    margin: 53px auto 45px auto;
+  }
 }

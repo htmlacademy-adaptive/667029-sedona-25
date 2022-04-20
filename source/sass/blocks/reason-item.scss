@@ -1,40 +1,43 @@
 .reason-item--large {
-  .reason-wrapper {
-    background-color: $color-blue-125;
-    margin-right: 0;
-    margin-left: 0;
-    padding: 35px 20px 40px 20px;
-
-    .text {
-      color: $color-white;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
+.reason-item--large .reason-container {
+  background-color: $color-blue-125;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 35px 20px 40px 20px;
+}
+
+.reason-item--large .text {
+  color: $color-white;
+}
+
 .reason-item:not(.reason-item--large) {
   background-color: $color-grey-150;
   padding-right: 20px;
   padding-left: 20px;
+}
 
-  .reason-wrapper {
-    padding-top: 25px;
-    padding-bottom: 25px;
+.reason-item:not(.reason-item--large) .reason-container {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.reason-item:not(.reason-item--large):not(:last-child) .reason-container {
+  border-bottom: 1px solid $color-grey-275;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
   }
 }
 
-.reason-item:not(.reason-item--large):not(:last-child) {
-  .reason-wrapper {
-    border-bottom: 1px solid $color-grey-275;
-  }
-}
-
-.reason-item__image {
+.reason-item__image-wrapper {
   width: 320px;
+  background-color: $color-red-200;
 
   @media (min-width: $tablet-width) {
     width: 512px;
