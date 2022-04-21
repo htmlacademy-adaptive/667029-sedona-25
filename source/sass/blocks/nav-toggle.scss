@@ -1,5 +1,13 @@
 .nav-toggle {
   background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 4;
+  display: block;
+  width: 63px;
+  height: 56px;
+  cursor: pointer;
   border: none;
 
   @media (min-width: $tablet-width) {

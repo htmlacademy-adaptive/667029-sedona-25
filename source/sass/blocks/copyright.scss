@@ -1,0 +1,27 @@
+.copyright {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.copyright:hover {
+  color: $color-blue-125;
+}
+
+.copyright:hover .academy-icon path {
+  fill: $color-blue-125;
+}
+
+.copyright:active {
+  color: $color-grey-500;
+}
+
+.copyright:active .academy-icon path {
+  fill: $color-grey-500;
+}
+
+.copyright__text {
+  margin-top: 0;
+  margin-bottom: 0;
+}

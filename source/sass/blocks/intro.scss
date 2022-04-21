@@ -9,11 +9,26 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 648px;
+    width: 520px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 880px;
+    //width: 880px;
+  }
+}
+
+.intro__wrapper.index-intro {
+  padding-top: 32px;
+  padding-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 48px;
+    padding-bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 59px;
+    padding-bottom: 45px;
   }
 }
 
