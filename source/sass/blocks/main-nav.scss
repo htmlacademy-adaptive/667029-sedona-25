@@ -1,20 +1,82 @@
-.main-nav {
-  display: grid;
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  width: 23px;
+  height: 4px;
+  background-color: $color-blue-125;
+  box-shadow: 0 9px 0 0 $color-blue-125, 0 18px 0 0 $color-blue-125;
 }
 
-.main-nav__toggle {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  z-index: 2;
-  margin: 0 0 auto auto;
+.main-nav--closed .main-nav__toggle:hover::before {
+  opacity: 0.6;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  opacity: 0.3;
+}
+
+.main-nav--closed .nav-list {
+  @media (max-width: calc($tablet-width - 1px)) {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 18px;
+    width: 22px;
+    height: 4px;
+    background-color: $color-white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav--opened .main-nav__toggle:hover {
+  opacity: 0.6;
+}
+
+.main-nav--opened .main-nav__toggle:active {
+  opacity: 0.3;
+}
+
+.main-nav--opened .nav-list {
+  z-index: 3;
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .nav-list {
+  display: block;
+  z-index: 3;
 }
 
 .main-nav__list {
   margin: 0;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  position: relative;
+  top: -56px;
+  margin-bottom: calc(-227px);
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    margin-bottom: 0;
+  }
 }

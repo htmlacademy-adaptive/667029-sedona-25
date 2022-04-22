@@ -9,3 +9,16 @@
   font-size: 21px;
   line-height: 26px;
 }
+
+.button:hover {
+  background-color: $color-blue-150;
+}
+
+.button:active {
+  background-color: $color-blue-200;
+  color: $opacity-white-30;
+}
+
+.button:disabled {
+  background-color: $color-grey-190;
+}

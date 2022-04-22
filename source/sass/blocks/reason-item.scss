@@ -9,22 +9,79 @@
   background-color: $color-blue-125;
   margin-right: 0;
   margin-left: 0;
-  padding: 35px 20px 40px 20px;
+  padding: 39px 20px 40px 20px;
+  color: $color-white;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 43px 35px 41px 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 51px 85px 53px 85px;
+  }
 }
 
-.reason-item--large .text {
-  color: $color-white;
+.reason-item--large:first-of-type .reason-container {
+  padding-top: 64px;
+
+  @media (max-width: calc($tablet-width - 1px)) {
+    background-image: url("../img/intro-text-back-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 30px 44px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 47px 60px 57px 60px;
+  }
 }
+
+.reason-item--large:nth-of-type(2) .reason-item__text-wrapper {
+  order: 2;
+}
+
+.reason-item .reason-item__title {
+  margin-top: 0;
+  margin-bottom: 11px;
+}
+
+.reason-item .reason-item__description {
+  margin-top: 0;
+  margin-bottom: 17px;
+}
+
+.reason-item .reason-item__description:last-child {
+  margin-bottom: 0;
+}
+
 
 .reason-item:not(.reason-item--large) {
   background-color: $color-grey-150;
   padding-right: 20px;
   padding-left: 20px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .reason-item:not(.reason-item--large) .reason-container {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 26px;
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding: 42px 55px 41px 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 42px 63px 60px 63px;
+  }
 }
 
 .reason-item:not(.reason-item--large):not(:last-child) .reason-container {
@@ -32,6 +89,18 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
+  }
+}
+
+.reason-item--large + .reason-item:not(.reason-item--large) .reason-container {
+  @media (min-width: $tablet-width) {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 45px;
+    padding-left: 45px;
   }
 }
 

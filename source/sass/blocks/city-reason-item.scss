@@ -1,9 +1,85 @@
 .city-reason-item {
+  position: relative;
+
   @media (min-width: $tablet-width) {
-    padding: 60px 20px 60px 20px;
+    text-align: center;
+    margin: 158px auto 60px auto;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 25px 20px 55px 20px;
+    margin: 159px auto 80px auto;
   }
+}
+
+.city-reason-item br {
+  @media (max-width: calc($tablet-width - 1px)) {
+    display: none;
+  }
+}
+
+.city-reason-item .title::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (max-width: calc($tablet-width - 1px)) {
+    top: -8px;
+    left: -48px;
+  }
+
+  @media (min-width: $tablet-width) {
+    bottom: 130px;
+    width: 75px;
+    height: 75px;
+  }
+}
+
+.city-reason-item--house .title::before {
+  background-image: url("../img/icon-house.svg");
+
+  @media (min-width: $tablet-width) {
+    left: 57px;
+  }
+}
+
+.city-reason-item--food .title::before {
+  background-image: url("../img/icon-food.svg");
+
+  @media (min-width: $tablet-width) {
+    left: 60px;
+  }
+}
+
+.city-reason-item--souvenir .title::before {
+  background-image: url("../img/icon-souvenir.svg");
+
+  @media (min-width: $tablet-width) {
+    left: 55px;
+  }
+}
+
+.city-reason-item__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.city-reason-item__description {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    width: 193px;
+  }
+}
+
+.city-reason-item:last-child .city-reason-item__description {
+  margin-bottom: 0;
 }

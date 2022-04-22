@@ -1,12 +1,31 @@
 .footer-content__wrapper {
   width: 280px;
-  margin: 0 auto;
+  margin: 39px auto 29px auto;
 
   @media (min-width: $tablet-width) {
     width: 648px;
+    margin-top: 36px;
+    margin-bottom: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 880px;
+    width: 963px;
+  }
+}
+
+.footer-content__contacts {
+  margin-top: 0;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.footer-content__social {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
   }
 }

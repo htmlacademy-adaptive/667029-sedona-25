@@ -1,8 +1,26 @@
 .social-link {
   text-decoration: none;
   color: $color-white;
+  background-color: $color-blue-125;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  display: flex;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-link:hover {
+  background-color: $color-blue-150;
+}
+
+.social-link:active {
+  background-color: $color-blue-200;
+}
+
+.social-link:active path {
+  fill: $opacity-white-30;
 }

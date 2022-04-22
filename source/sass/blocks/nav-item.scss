@@ -1,8 +1,71 @@
 .nav-item {
   background-color: $color-blue-125;
-  color: $color-white;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  padding-top: 17px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    font-size: 14px;
+    line-height: 21px;
+    padding-bottom: 17px;
+    background-color: $color-white;
+    color: $color-black;
+  }
+}
+
+.nav-item:first-child {
+  padding-right: 63px;
+  padding-left: 63px;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
+
+  @media (min-width: $tablet-width) {
+    box-shadow: none;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.nav-item:last-child {
+  border-bottom: none;
+}
+
+.nav-item--current .link {
+  @media (min-width: $tablet-width) {
+    color: $color-brown-700;
+  }
+}
+
+.nav-item:hover {
+  @media (max-width: calc($tablet-width - 1px)) {
+    background-color: $color-blue-150;
+  }
+}
+
+.nav-item:hover .link {
+  @media (min-width: $tablet-width) {
+    color: $color-blue-125;
+  }
+}
+
+.nav-item:active {
+  @media (max-width: calc($tablet-width - 1px)) {
+    background-color: $color-blue-200;
+  }
+}
+
+.nav-item:active .link {
+  @media (max-width: calc($tablet-width - 1px)) {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    color: $opacity-black-30;
+  }
 }

@@ -1,0 +1,5 @@
+.reason-container br {
+  @media (max-width: calc($tablet-width - 1px)) {
+    display: none;
+  }
+}
