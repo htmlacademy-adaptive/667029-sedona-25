@@ -11,10 +11,6 @@
   @media (min-width: $tablet-width) {
     width: 520px;
   }
-
-  @media (min-width: $desktop-width) {
-    //width: 880px;
-  }
 }
 
 .intro__wrapper.index-intro {
@@ -33,13 +29,24 @@
 }
 
 .intro__wrapper.review-intro {
-  margin-top: 65px;
-  margin-bottom: 60px;
+  margin-top: 36px;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 64px;
+    margin-bottom: 102px;
+  }
 }
 
 .intro__wrapper.catalog-intro {
-  margin-top: 35px;
-  margin-bottom: 45px;
+  margin-top: 33px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 62px;
+    margin-bottom: 70px;
+    width: 445px;
+  }
 }
 
 .intro__image-wrapper {

@@ -14,7 +14,7 @@
         <img class="header-content__logo-image logo" src="img/icon-logo.svg" width="185" height="96" alt="Логотип сайта городка Седона">
       </a>
 
-      <nav class="header-content__nav main-nav main-nav--nojs">
+      <nav class="header-content__nav main-nav no-js">
         <div class="main-nav__menu-block menu-block">
           <button class="main-nav__toggle nav-toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -41,7 +41,7 @@
     <main class="page__main main-content">
       <section class="main-content__intro intro">
         <div class="intro__wrapper review-intro">
-          <h1 class="review-intro__title title">Оставьте свой отзвыв</h1>
+          <h1 class="review-intro__title title">Оставьте свой отзыв</h1>
           <p class="review-intro__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых вами достопримечательностях</p>
         </div>
         <div class="intro__image-wrapper">
@@ -86,16 +86,29 @@
                 <label class="field__label" for="phone">
                   <span class="field__title">Контактный телефон*:</span>
                 </label>
-                <input class="field__input text-input" id="phone" name="phone" type="tel" placeholder="Введите телефон" required>
-                <div class="field__icon phone-icon"></div>
+                <div class="field__input-group input-group">
+                  <input class="field__input text-input" id="phone" name="phone" type="tel" placeholder="Введите телефон" required>
+                  <div class="field__icon icon icon--phone">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.6 7.8C5 10.6 7.4 12.9 10.2 14.4L12.4 12.2C12.7 11.9 13.1 11.8 13.4 12C14.5 12.4 15.7 12.6 17 12.6C17.6 12.6 18 13 18 13.6V17C18 17.6 17.6 18 17 18C7.6 18 0 10.4 0 1C0 0.4 0.4 0 1 0H4.5C5.1 0 5.5 0.4 5.5 1C5.5 2.2 5.7 3.4 6.1 4.6C6.2 4.9 6.1 5.3 5.9 5.6L3.6 7.8Z" fill="#010101"/>
+                      </svg>
+                  </div>
+                </div>
+
               </li>
 
               <li class="form-group__item field">
                 <label class="field__label" for="email">
                   <span class="field__title">Электронная почта*:</span>
                 </label>
-                <input class="field__input text-input text-input" id="email" name="email" type="email" placeholder="Введите e-mail" required>
-                <div class="field__icon email-icon"></div>
+                <div class="field__input-group input-group">
+                  <input class="field__input text-input text-input" id="email" name="email" type="email" placeholder="Введите e-mail" required>
+                  <div class="field__icon icon icon--email">
+                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 8C7.7 8 7.5 7.9 7 7.7L0 4V11C0 11.5 0.5 12 1 12H15C15.5 12 16 11.5 16 11V4L9 7.7C8.5 7.9 8.3 8 8 8ZM15 0H1C0.5 0 0 0.5 0 1V1.8L8 6L16 1.8V1C16 0.5 15.5 0 15 0Z" fill="black"/>
+                      </svg>
+                  </div>
+                </div>
               </li>
             </ul>
           </fieldset>
@@ -105,22 +118,22 @@
 
             <ul class="form-group__list field-list">
               <li class="form-group__item radio">
-                <input class="radio__input" id="impression-positive" name="impression" type="radio" value="positive" checked>
-                <label class="radio__label" for="impression-positive">
+                <input class="radio__input visually-hidden" id="impression-positive" name="impression" type="radio" value="positive" checked>
+                <label class="radio__label radio-label" for="impression-positive">
                   <span class="radio__title text-input">Скорее положительное</span>
                 </label>
               </li>
 
               <li class="form-group__item radio">
-                <input class="radio__input" id="impression-negative" name="impression" type="radio" value="negative">
-                <label class="radio__label" for="impression-negative">
+                <input class="radio__input visually-hidden" id="impression-negative" name="impression" type="radio" value="negative">
+                <label class="radio__label radio-label" for="impression-negative">
                   <span class="radio__title text-input">Скорее отрицательное</span>
                 </label>
               </li>
 
               <li class="form-group__item radio">
-                <input class="radio__input" id="impression-no-answer" name="impression" type="radio" value="no-answer">
-                <label class="radio__label" for="impression-no-answer">
+                <input class="radio__input visually-hidden" id="impression-no-answer" name="impression" type="radio" value="no-answer">
+                <label class="radio__label radio-label" for="impression-no-answer">
                   <span class="radio__title text-input">Затрудняюсь ответить</span>
                 </label>
               </li>
@@ -128,33 +141,33 @@
           </fieldset>
 
           <fieldset class="review-form__group form-group form-group--sights">
-            <legend class="form-group__title title">Посещенные достопримечательности:</legend>
+            <legend class="form-group__title title">Посещенные<br> достопримечательности:</legend>
 
             <ul class="form-group__list field-list">
               <li class="form-group__item checkbox">
-                <input class="checkbox__input" id="diablo-bridge" name="diablo-bridge" type="checkbox" checked>
-                <label class="checkbox__label" for="diablo-bridge">
+                <input class="checkbox__input visually-hidden" id="diablo-bridge" name="diablo-bridge" type="checkbox" checked>
+                <label class="checkbox__label checkbox-label" for="diablo-bridge">
                   <span class="checkbox__title text-input">Мост Дьявола</span>
                 </label>
               </li>
 
               <li class="form-group__item checkbox">
-                <input class="checkbox__input" id="mountain-bell" name="mountain-bell" type="checkbox" checked>
-                <label class="checkbox__label" for="mountain-bell">
+                <input class="checkbox__input visually-hidden" id="mountain-bell" name="mountain-bell" type="checkbox" checked>
+                <label class="checkbox__label checkbox-label" for="mountain-bell">
                   <span class="checkbox__title text-input">Гора-Колокол</span>
                 </label>
               </li>
 
               <li class="form-group__item checkbox">
-                <input class="checkbox__input" id="slide-park" name="slide-park" type="checkbox" checked>
-                <label class="checkbox__label" for="slide-park">
+                <input class="checkbox__input visually-hidden" id="slide-park" name="slide-park" type="checkbox" checked>
+                <label class="checkbox__label checkbox-label" for="slide-park">
                   <span class="checkbox__title text-input">Слайд-парк</span>
                 </label>
               </li>
 
               <li class="form-group__item checkbox">
-                <input class="checkbox__input" id="red-rocks" name="red-rocks" type="checkbox">
-                <label class="checkbox__label" for="red-rocks">
+                <input class="checkbox__input visually-hidden" id="red-rocks" name="red-rocks" type="checkbox">
+                <label class="checkbox__label checkbox-label" for="red-rocks">
                   <span class="checkbox__title text-input">Красные скалы</span>
                 </label>
               </li>
@@ -233,7 +246,7 @@
 
     <section class="message message--error">
       <div class="message__wrapper">
-        <h2 class="message__title title">Что-то пошло не так!</h2>
+        <h2 class="message__title title">Что-то пошло <br>не так!</h2>
         <p class="message__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         <button class="button" type="button">OK</button>
       </div>

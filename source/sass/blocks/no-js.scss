@@ -1,0 +1,10 @@
+.no-js .main-nav__toggle {
+  display: none;
+}
+
+.no-js .nav-list {
+  @media (max-width: calc($tablet-width - 1px)) {
+    display: block;
+    z-index: 3;
+  }
+}

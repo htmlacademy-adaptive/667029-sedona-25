@@ -5,6 +5,12 @@
 
   @media (min-width: $tablet-width) {
     border-top: none;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
   }
 }
 
@@ -22,4 +28,26 @@
 
 .item-photo__image-wrapper {
   background-color: $color-red-200;
+
+  @media (min-width: $desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+
+.item-photo__information {
+  margin-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
 }

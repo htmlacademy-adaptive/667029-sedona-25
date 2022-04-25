@@ -3,6 +3,10 @@
   list-style-type: none;
   display: grid;
 
+  @media (max-width: calc($tablet-width - 1px)) {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }

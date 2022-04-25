@@ -7,9 +7,14 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: none;
+  box-sizing: border-box;
 }
 
-.text-input--additional {
-  padding: 16px;
-  min-width: calc(100% - 40px);
+.text-input:hover {
+  background-color: $color-grey-225;
+}
+
+.text-input:focus {
+  background-color: $color-white;
+  outline: 4px solid $color-grey-225;
 }

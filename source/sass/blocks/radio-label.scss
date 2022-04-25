@@ -1,0 +1,18 @@
+.radio-label {
+  position: relative;
+  cursor: pointer;
+}
+
+.radio-label::before {
+  position: absolute;
+  content: "";
+  top: -13px;
+  left: -60px;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  border: 15px solid $color-grey-100;
+  background-color: $color-grey-100;
+  border-radius: 50%;
+  cursor: pointer;
+}

@@ -1,3 +1,27 @@
 .review-intro {
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 435px;
+  }
+}
+
+.review-intro__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.review-intro__description {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.review-intro .title {
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }

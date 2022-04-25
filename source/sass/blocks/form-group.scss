@@ -2,10 +2,140 @@
   border: none;
   margin: 0;
   width: 100%;
-  text-align: center;
   padding: 0;
 }
 
 .form-group__list {
   margin: 0;
+}
+
+.form-group__item:not(:last-child) {
+  margin-bottom: 16px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.form-group__item.radio,
+.form-group__item.checkbox {
+  margin-left: 62px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
+
+.form-group__item:not(:last-child).radio,
+.form-group__item:not(:last-child).checkbox {
+  margin-bottom: 36px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.form-group__item:nth-last-child(2).checkbox {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.form-group br {
+  @media (max-width: calc($tablet-width - 1px)) {
+    display: none;
+  }
+}
+
+.form-group .title {
+  text-align: center;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+    font-size: 21px;
+  }
+}
+
+.form-group--impression .title {
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
+  }
+}
+
+.form-group--sights .title {
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 59px;
+  }
+}
+
+.form-group--personal .field-list {
+  @media (min-width: $tablet-width) {
+    width: 280px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 430px;
+  }
+}
+
+.form-group--contacts .field-list {
+  @media (min-width: $tablet-width) {
+    width: 280px;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 402px;
+  }
+}
+
+.form-group--impression .field-list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 36px;
+    margin-right: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 53px;
+    margin-right: 53px;
+  }
+}
+
+.form-group--sights .field-list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 84px;
+    margin-right: 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 43px;
+    margin-right: 43px;
+  }
+}
+
+.form-group--additional-text {
+  @media (min-width: $desktop-width) {
+    width: 768px;
+    margin: 0 auto 48px auto;
+  }
 }

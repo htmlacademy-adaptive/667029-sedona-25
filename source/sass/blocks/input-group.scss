@@ -1,0 +1,12 @@
+.input-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-group .text-input {
+  width: 222px;
+
+  @media (min-width: $desktop-width) {
+    width: 344px;
+  }
+}
