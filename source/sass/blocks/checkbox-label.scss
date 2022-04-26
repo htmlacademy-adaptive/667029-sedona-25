@@ -1,0 +1,17 @@
+.checkbox-label {
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox-label::before {
+  position: absolute;
+  content: "";
+  top: -13px;
+  left: -60px;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  background-color: $color-grey-100;
+  border-radius: 4px;
+  cursor: pointer;
+}

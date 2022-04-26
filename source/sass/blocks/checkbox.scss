@@ -1,0 +1,28 @@
+.checkbox .text-input {
+  background-color: transparent;
+}
+
+.checkbox__input:checked + .checkbox-label::after {
+  content: "";
+  position: absolute;
+  left: -47px;
+  top: 2px;
+  width: 22px;
+  height: 16px;
+  background-color: transparent;
+  background-image: url("../img/icon-check.svg");
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+
+.checkbox__input:hover + .checkbox-label::before {
+  background-color: $color-grey-225;
+}
+
+.checkbox__input:active + .checkbox-label::before {
+  background-color: $color-grey-300;
+}
+
+.checkbox__input:checked:active + .checkbox-label::after {
+  background-image: url("../img/icon-check-active.svg");
+}

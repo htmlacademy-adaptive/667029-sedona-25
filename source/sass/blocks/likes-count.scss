@@ -1,0 +1,22 @@
+.likes-count {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.likes-count__like-icon {
+  margin-right: 14px;
+}
+
+.likes-count__like-icon path {
+  @media (min-width: $desktop-width) {
+    fill: $color-white;
+    opacity: 1;
+  }
+}
+
+.likes-count__amount-of-likes {
+  margin-top: 0;
+  margin-bottom: 0;
+}

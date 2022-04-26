@@ -7,6 +7,70 @@
   }
 }
 
+.review-form__group {
+  margin-top: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+}
+
+.review-form__group.form-group--personal {
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+  }
+}
+
+.review-form__group.form-group--contacts {
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+  }
+}
+
+.review-form__group.form-group--impression {
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 65px;
+  }
+}
+
+.review-form__group.form-group--sights {
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 87px;
+  }
+}
+
+.review-form__group.form-group--additional-text {
+  margin-bottom: 56px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
+  }
+}
+
 .review-form__group:not(:first-child):not(:nth-child(2)) {
   @media (min-width: $tablet-width) {
     grid-column: span 2;
@@ -14,7 +78,10 @@
 }
 
 .review-form__actions {
+  margin-bottom: 14px;
+
   @media (min-width: $tablet-width) {
     grid-column: span 2;
+    margin-bottom: 64px;
   }
 }

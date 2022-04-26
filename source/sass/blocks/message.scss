@@ -1,11 +1,35 @@
+.message {
+  text-align: center;
+}
+
 .message__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.message__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.message__description {
+  margin-top: 0;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+}
+
 .message .button {
   font-size: 18px;
+  padding-top: 18px;
+  padding-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .message--error {
@@ -17,12 +41,31 @@
 }
 
 .message--error .message__wrapper {
-  width: 280px;
-  margin: 48px auto 35px auto;
+  padding: 45px 40px 35px 40px;
 
   @media (min-width: $tablet-width) {
-    width: 360px;
-    margin: 55px auto 50px auto;
+    padding: 50px 45px 49px 45px;
+  }
+}
+
+.message--error .button {
+  width: 180px;
+
+  @media (min-width: $tablet-width) {
+    width: 272px;
+  }
+}
+
+.message--error .title {
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.message--error br {
+  @media (max-width: calc($tablet-width - 1px)) {
+    display: none;
   }
 }
 
@@ -35,11 +78,38 @@
 }
 
 .message--success .message__wrapper {
-  width: 280px;
-  margin: 43px auto 20px auto;
+  padding: 39px 40px 0 40px;
+
 
   @media (min-width: $tablet-width) {
-    width: 600px;
-    margin: 53px auto 45px auto;
+    padding: 53px 110px 0 110px;
+  }
+}
+
+.message--success .message__description {
+  margin-bottom: 45px;
+}
+
+.message--success .button {
+  width: 320px;
+  border: 20px solid $color-grey-100;
+
+  @media (min-width: $tablet-width) {
+    width: 640px;
+    border: 44px solid $color-grey-100;
+    border-right-width: 91px;
+    border-left-width: 91px;
+  }
+}
+
+.message--success .title {
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
+}
+
+.message--success .message__title {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
   }
 }

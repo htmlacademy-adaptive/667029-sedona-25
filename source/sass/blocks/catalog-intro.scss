@@ -1,0 +1,23 @@
+.catalog-intro {
+  text-align: center;
+}
+
+.catalog-intro__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.catalog-intro__description {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.catalog-intro .title {
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
+}
