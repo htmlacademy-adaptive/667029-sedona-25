@@ -118,6 +118,13 @@
   }
 }
 
+.reason-item__image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
 .reason-item__inner-list {
   @media (min-width: $tablet-width) {
     grid-column: span 3;
