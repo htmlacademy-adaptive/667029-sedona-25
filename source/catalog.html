@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Фото и видео - Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/favicon-180.png">
+    <link rel="manifest" href="sedona.webmanifest">
   </head>
 
   <body class="page__body body-content">
 
     <header class="page__header header-content">
       <a class="header-content__logo">
-        <img class="header-content__logo-image logo" src="img/icon-logo.svg" width="185" height="96" alt="Логотип сайта городка Седона">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/icon-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/icon-logo-tablet.svg">
+          <img class="header-content__logo-image logo" src="img/icon-logo-mobile.svg" width="185" height="96" alt="Логотип сайта городка Седона">
+        </picture>
       </a>
 
       <nav class="header-content__nav main-nav no-js">
@@ -44,8 +52,7 @@
           <h1 class="catalog-intro__title title">Фото и видео</h1>
           <p class="catalog-intro__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         </div>
-        <div class="intro__image-wrapper">
-          <img class="intro__image" src="#" width="902" height="214" alt="Вид на окрестности Седоны">
+        <div class="intro__promo-wrapper">
         </div>
       </section>
 
@@ -55,7 +62,11 @@
         <ul class="photo__list photo-list">
           <li class="photo-list__item photo-list__item--large item-photo">
             <div class="item-photo__image-wrapper">
-              <img class="item-photo__image" src="#" width="280" height="280" alt="Дорога на закате">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                <img class="item-photo__image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога на закате">
+              </picture>
             </div>
             <div class="item-photo__information image-info">
               <div class="image-info__description">
@@ -72,7 +83,11 @@
           </li>
           <li class="photo-list__item item-photo">
             <div class="item-photo__image-wrapper">
-              <img class="item-photo__image" src="#" width="280" height="280" alt="Цветы на фоне гор">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                <img class="item-photo__image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Цветы на фоне гор">
+              </picture>
             </div>
             <div class="item-photo__information image-info">
               <div class="image-info__description">
@@ -89,7 +104,11 @@
           </li>
           <li class="photo-list__item item-photo">
             <div class="item-photo__image-wrapper">
-              <img class="item-photo__image" src="#" width="280" height="280" alt="Вид на серпантин в горах">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                <img class="item-photo__image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Вид на серпантин в горах">
+              </picture>
             </div>
             <div class="item-photo__information image-info">
               <div class="image-info__description">
@@ -106,7 +125,11 @@
           </li>
           <li class="photo-list__item item-photo">
             <div class="item-photo__image-wrapper">
-              <img class="item-photo__image" src="#" width="280" height="280" alt="Вид на Мост Дьявола">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                <img class="item-photo__image" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Вид на Мост Дьявола">
+              </picture>
             </div>
             <div class="item-photo__information image-info">
               <div class="image-info__description">
@@ -131,7 +154,7 @@
           <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
         <div class="video__player player">
-          <video class="player__media media">
+          <video class="player__media media" poster="img/video-mobile.jpg">
             <source src="#">
           </video>
           <button class="player__button play-button" type="button">

@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Форма отзыва - Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/favicon-180.png">
+    <link rel="manifest" href="sedona.webmanifest">
   </head>
 
   <body class="page__body body-content">
 
     <header class="page__header header-content">
       <a class="header-content__logo">
-        <img class="header-content__logo-image logo" src="img/icon-logo.svg" width="185" height="96" alt="Логотип сайта городка Седона">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/icon-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/icon-logo-tablet.svg">
+          <img class="header-content__logo-image logo" src="img/icon-logo-mobile.svg" width="185" height="96" alt="Логотип сайта городка Седона">
+        </picture>
       </a>
 
       <nav class="header-content__nav main-nav no-js">
@@ -44,8 +52,7 @@
           <h1 class="review-intro__title title">Оставьте свой отзыв</h1>
           <p class="review-intro__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых вами достопримечательностях</p>
         </div>
-        <div class="intro__image-wrapper">
-          <img class="intro__image" src="#" width="902" height="214" alt="Вид на окрестности Седоны">
+        <div class="intro__promo-wrapper">
         </div>
       </section>
 

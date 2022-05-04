@@ -37,6 +37,13 @@
   }
 }
 
+.item-photo__image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
 .item-photo__information {
   margin-top: 15px;
 
@@ -49,5 +56,6 @@
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
+    align-self: flex-end;
   }
 }

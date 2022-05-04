@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Главная - Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/favicon-180.png">
+    <link rel="manifest" href="sedona.webmanifest">
   </head>
   <body class="page__body body-content">
 
     <header class="page__header header-content">
       <a class="header-content__logo">
-        <img class="header-content__logo-image logo" src="img/icon-logo.svg" width="185" height="96" alt="Логотип сайта городка Седона">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/icon-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/icon-logo-tablet.svg">
+          <img class="header-content__logo-image logo" src="img/icon-logo-mobile.svg" width="185" height="96" alt="Логотип сайта городка Седона">
+        </picture>
       </a>
 
       <nav class="header-content__nav main-nav no-js">
@@ -43,8 +51,7 @@
           <h1 class="index-intro__slogan title">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h1>
           <p class="index-intro__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
-        <div class="intro__image-wrapper">
-          <img class="intro__image" src="#" width="901" height="389" alt="Добро пожаловать в прекрасную Седону. Потому что Гранд Каньон ничто!">
+        <div class="intro__index-wrapper">
         </div>
       </section>
 
@@ -61,7 +68,11 @@
               </div>
 
               <div class="reason-item__image-wrapper">
-                <img class="reason-item__image" src="#" width="520" height="260" alt="Вид на улицу в Седоне">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/reason-city-desktop.jpg 1x, img/reason-city-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/reason-city-tablet.jpg 1x, img/reason-city-tablet@2x.jpg 2x">
+                  <img class="reason-item__image" src="img/reason-city-mobile.jpg" srcset="img/reason-city-mobile@2x.jpg 2x" width="520" height="260" alt="Вид на улицу в Седоне">
+                </picture>
               </div>
 
               <ul class="reason-item__inner-list city-reason-list">
@@ -87,7 +98,11 @@
               </div>
 
               <div class="reason-item__image-wrapper">
-                <img class="reason-item__image" src="#" width="520" height="260" alt="Вид на Мост Дьявола">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/reason-bridge-desktop.jpg 1x, img/reason-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/reason-bridge-tablet.jpg 1x, img/reason-bridge-tablet@2x.jpg 2x">
+                  <img class="reason-item__image" src="img/reason-bridge-mobile.jpg" srcset="img/reason-bridge-mobile@2x.jpg 2x" width="520" height="260" alt="Вид на Мост Дьявола">
+                </picture>
               </div>
             </li>
             <li class="reason-list__item reason-item">
