@@ -32,8 +32,17 @@
   }
 }
 
+.nav-item:not(:first-child) {
+  padding-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 17px;
+  }
+}
+
 .nav-item:last-child {
   border-bottom: none;
+  padding-top: 18px;
 }
 
 .nav-item--current .link {

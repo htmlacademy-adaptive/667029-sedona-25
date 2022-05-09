@@ -3,11 +3,11 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
-    margin: 158px auto 60px auto;
+    margin: 158px auto 38px auto;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 159px auto 80px auto;
+    margin: 159px auto 58px auto;
   }
 }
 
@@ -31,7 +31,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    bottom: 130px;
+    bottom: 153px;
     width: 75px;
     height: 75px;
   }
@@ -42,14 +42,27 @@
 
   @media (min-width: $tablet-width) {
     left: 57px;
+    bottom: 160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 111px;
+    bottom: 140px;
   }
 }
 
 .city-reason-item--food .title::before {
   background-image: url("../img/icon-food.svg");
+  left: -52px;
+  top: -10px;
 
   @media (min-width: $tablet-width) {
-    left: 60px;
+    left: 57px;
+    top: -100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 112px;
   }
 }
 
@@ -57,7 +70,32 @@
   background-image: url("../img/icon-souvenir.svg");
 
   @media (min-width: $tablet-width) {
-    left: 55px;
+    left: 57px;
+    bottom: 160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 111px;
+    bottom: 140px;
+  }
+}
+
+.city-reason-item--food .title {
+  margin-bottom: 13px;
+  transform: translateX(5px);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+    transform: none;
+  }
+}
+
+.city-reason-item--food .city-reason-item__description {
+  margin-bottom: 25px;
+  transform: translateX(5px);
+
+  @media (min-width: $tablet-width) {
+    transform: none;
   }
 }
 
@@ -78,8 +116,18 @@
     margin-bottom: 0;
     width: 193px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+  }
 }
 
 .city-reason-item:last-child .city-reason-item__description {
   margin-bottom: 0;
+}
+
+.city-reason-item:last-child br {
+  @media (max-width: calc($desktop-width - 1px)) {
+    display: none;
+  }
 }

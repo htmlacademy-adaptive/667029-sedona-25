@@ -5,6 +5,14 @@
 .index-intro__slogan {
   margin-top: 0;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+  }
+}
+
+.index-intro__slogan.title {
+  line-height: 27px;
 }
 
 .index-intro__description {

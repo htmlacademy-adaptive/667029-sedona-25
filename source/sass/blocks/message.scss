@@ -10,7 +10,15 @@
 
 .message__title {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 24px;
+  }
 }
 
 .message__description {
@@ -18,7 +26,7 @@
   margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 45px;
+    margin-bottom: 48px;
   }
 }
 
@@ -41,10 +49,14 @@
 }
 
 .message--error .message__wrapper {
-  padding: 45px 40px 35px 40px;
+  padding: 45px 45px 35px 45px;
 
   @media (min-width: $tablet-width) {
     padding: 50px 45px 49px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 47px;
   }
 }
 
@@ -84,10 +96,18 @@
   @media (min-width: $tablet-width) {
     padding: 53px 110px 0 110px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 47px;
+  }
 }
 
 .message--success .message__description {
-  margin-bottom: 45px;
+  margin-bottom: 49px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 51px;
+  }
 }
 
 .message--success .button {
@@ -111,5 +131,9 @@
 .message--success .message__title {
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 33px;
   }
 }

@@ -16,19 +16,21 @@
 }
 
 .review-form__group.form-group--personal {
-  margin-bottom: 39px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 63px;
+    padding-bottom: 15px;
+    margin-bottom: 48px;
+    border-right: 1px solid $color-grey-250;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 71px;
+    margin-bottom: 59px;
   }
 }
 
 .review-form__group.form-group--contacts {
-  margin-bottom: 34px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 63px;
@@ -40,14 +42,14 @@
 }
 
 .review-form__group.form-group--impression {
-  margin-bottom: 34px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 58px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 65px;
+    margin-bottom: 73px;
   }
 }
 
