@@ -10,6 +10,11 @@
 
 .field .text-input--additional {
   min-width: calc(100% - 40px);
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 40px;
+  }
 }
 
 .field__title {

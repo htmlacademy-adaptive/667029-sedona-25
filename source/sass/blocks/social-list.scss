@@ -6,4 +6,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 6px;
+
+  @media (min-width: $tablet-width) {
+    transform: translateX(-3px);
+  }
 }

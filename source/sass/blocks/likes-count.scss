@@ -7,6 +7,10 @@
 
 .likes-count__like-icon {
   margin-right: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 10px;
+  }
 }
 
 .likes-count__like-icon path {

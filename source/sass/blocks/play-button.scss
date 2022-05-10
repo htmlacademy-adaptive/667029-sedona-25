@@ -7,4 +7,9 @@
   margin-right: auto;
   background-color: transparent;
   border: none;
+  transform: translateX(6px);
+
+  @media (min-width: $tablet-width) {
+    transform: none;
+  }
 }
