@@ -21,6 +21,10 @@
   background-color: $color-blue-200;
 }
 
-.social-link:active path {
+.social-link .social-icon {
+  fill: $color-white;
+}
+
+.social-link:active .social-icon {
   fill: $opacity-white-30;
 }

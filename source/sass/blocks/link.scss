@@ -1,32 +1,8 @@
 .link {
   text-decoration: none;
   color: $color-white;
-}
-
-.link:visited {
-  color: $color-white;
 
   @media (min-width: $tablet-width) {
     color: $color-black;
   }
 }
-
-/*
-.link:visited {
-  @media (min-width: $tablet-width) {
-    color: $color-black;
-  }
-}
-
-.link:hover {
-  @media (min-width: $tablet-width) {
-    color: $color-blue-125;
-  }
-}
-
-.link:active {
-  @media (min-width: $tablet-width) {
-    color: $opacity-black-30;
-  }
-}
-*/

@@ -5,7 +5,12 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 494px 1fr;
+  }
 }
+
 
 .review-form__group {
   margin-top: 24px;
