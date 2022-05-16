@@ -9,7 +9,6 @@ import rename from 'gulp-rename';
 import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
-import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
 
@@ -72,12 +71,10 @@ const createWebp = () => {
 
 const svg = () =>
   gulp.src(['source/img/*.svg', '!source/img/favicons/*.svg'])
-  .pipe(svgo())
   .pipe(gulp.dest('build/img'));
 
 const sprite = () => {
   return gulp.src('source/img/*.svg')
-  .pipe(svgo())
   .pipe(svgstore({
     inlineSvg: true
   }))

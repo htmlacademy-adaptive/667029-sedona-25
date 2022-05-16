@@ -14,7 +14,7 @@
   <body class="page__body body-content">
 
     <header class="page__header header-content">
-      <a class="header-content__logo">
+      <a class="header-content__logo" href="index.html">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/icon-logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/icon-logo-tablet.svg">
@@ -96,7 +96,7 @@
                 <div class="field__input-group input-group">
                   <input class="field__input text-input" id="phone" name="phone" type="tel" placeholder="Введите телефон" required>
                   <div class="field__icon icon">
-                    <svg class="icon-phone" width="18" height="18">
+                    <svg class="icon-phone" width="18" height="18" aria-hidden="true" focusable="false">
                       <use xlink:href="img/sprite.svg#icon-phone"></use>
                     </svg>
                   </div>
@@ -111,7 +111,7 @@
                 <div class="field__input-group input-group">
                   <input class="field__input text-input text-input" id="email" name="email" type="email" placeholder="Введите e-mail" required>
                   <div class="field__icon icon icon--email">
-                    <svg class="icon-email" width="16" height="12">
+                    <svg class="icon-email" width="16" height="12" aria-hidden="true" focusable="false">
                       <use xlink:href="img/sprite.svg#icon-email"></use>
                     </svg>
                   </div>
@@ -148,7 +148,7 @@
           </fieldset>
 
           <fieldset class="review-form__group form-group form-group--sights">
-            <legend class="form-group__title title">Посещенные<br> достопримечательности:</legend>
+            <legend class="form-group__title title">Посещенные достопримечательности:</legend>
 
             <ul class="form-group__list field-list">
               <li class="form-group__item checkbox">
@@ -245,7 +245,7 @@
 
     <section class="message message--error">
       <div class="message__wrapper">
-        <h2 class="message__title title">Что-то пошло <br>не так!</h2>
+        <h2 class="message__title title">Что-то пошло не так!</h2>
         <p class="message__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         <button class="button" type="button">OK</button>
       </div>
@@ -254,7 +254,7 @@
     <section class="message message--success">
       <div class="message__wrapper">
         <h2 class="message__title title">Ваш отзыв отправлен!</h2>
-        <p class="message__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br>В ближайшее время мы опубликуем его на сайте.</p>
+        <p class="message__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
         <button class="button" type="button">Закрыть окно</button>
       </div>
     </section>
