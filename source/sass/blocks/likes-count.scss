@@ -5,18 +5,19 @@
   align-items: baseline;
 }
 
+.likes-count .like-button {
+  fill: $opacity-black-30;
+
+  @media (min-width: $desktop-width) {
+    fill: $color-white;
+  }
+}
+
 .likes-count__like-icon {
   margin-right: 14px;
 
   @media (min-width: $tablet-width) {
     margin-right: 10px;
-  }
-}
-
-.likes-count__like-icon path {
-  @media (min-width: $desktop-width) {
-    fill: $color-white;
-    opacity: 1;
   }
 }
 

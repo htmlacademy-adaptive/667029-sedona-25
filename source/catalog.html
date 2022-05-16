@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Фото и видео - Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/favicon-180.png">
@@ -14,7 +14,7 @@
   <body class="page__body body-content">
 
     <header class="page__header header-content">
-      <a class="header-content__logo">
+      <a class="header-content__logo" href="index.html">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/icon-logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/icon-logo-tablet.svg">
@@ -160,7 +160,7 @@
           <video class="player__media media" poster="img/video-mobile.jpg">
             <source src="#">
           </video>
-          <button class="player__button play-button" type="button">
+          <button class="player__button play-button" type="button" aria-label="Начать просмотр видезаписи">
           </button>
         </div>
       </section>

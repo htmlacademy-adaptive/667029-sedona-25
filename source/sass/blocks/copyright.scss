@@ -6,11 +6,15 @@
   transform: translateX(2px);
 }
 
+.copyright .academy-icon {
+  fill: $color-black;
+}
+
 .copyright:hover {
   color: $color-blue-125;
 }
 
-.copyright:hover .academy-icon path {
+.copyright:hover .academy-icon {
   fill: $color-blue-125;
 }
 
@@ -18,7 +22,7 @@
   color: $color-grey-500;
 }
 
-.copyright:active .academy-icon path {
+.copyright:active .academy-icon {
   fill: $color-grey-500;
 }
 

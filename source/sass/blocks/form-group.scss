@@ -58,19 +58,9 @@
   }
 }
 
-.form-group--personal .title {
-  @media (min-width: $desktop-width) {
-    transform: translateX(6px);
-  }
-}
-
 .form-group--contacts .title {
   @media (min-width: $tablet-width) {
     transform: translateX(2px);
-  }
-
-  @media (min-width: $desktop-width) {
-    transform: translateX(6px);
   }
 }
 
