@@ -2,6 +2,10 @@
   background-color: transparent;
 }
 
+.checkbox .text-input:hover {
+  background-color: transparent;
+}
+
 .checkbox__input:checked + .checkbox-label::after {
   content: "";
   position: absolute;

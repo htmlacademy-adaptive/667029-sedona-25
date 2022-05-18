@@ -2,6 +2,10 @@
   background-color: transparent;
 }
 
+.radio .text-input:hover {
+  background-color: transparent;
+}
+
 .radio__input:hover + .radio-label::before {
   border-color: $color-grey-225;
   background-color: $color-grey-225;

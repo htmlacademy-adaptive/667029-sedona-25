@@ -1,11 +1,26 @@
 .message {
   text-align: center;
+  position: fixed;
+  z-index: 5;
+  background-color: $opacity-black-30;
+  min-height: 100%;
+  min-width: 320px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1200px;
+  }
 }
 
 .message__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: $color-white;
+  box-sizing: border-box;
 }
 
 .message__title {
@@ -40,23 +55,20 @@
   }
 }
 
-.message--error {
+.message--error .message__wrapper {
+  padding: 45px 45px 35px 45px;
+  margin: 116px auto auto auto;
   width: 320px;
 
   @media (min-width: $tablet-width) {
-    width: 400px;
-  }
-}
-
-.message--error .message__wrapper {
-  padding: 45px 45px 35px 45px;
-
-  @media (min-width: $tablet-width) {
     padding: 50px 45px 49px 45px;
+    margin-top: 283px;
+    width: 400px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 47px;
+    margin-top: 244px;
   }
 }
 
@@ -81,24 +93,20 @@
   }
 }
 
-.message--success {
+.message--success .message__wrapper {
+  padding: 39px 40px 0 40px;
+  margin: 402px auto auto auto;
   width: 320px;
 
   @media (min-width: $tablet-width) {
-    width: 640px;
-  }
-}
-
-.message--success .message__wrapper {
-  padding: 39px 40px 0 40px;
-
-
-  @media (min-width: $tablet-width) {
     padding: 53px 110px 0 110px;
+    margin-top: 162px;
+    width: 640px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 47px;
+    margin-top: 145px;
   }
 }
 

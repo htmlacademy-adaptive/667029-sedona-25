@@ -9,6 +9,8 @@
     <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/favicon-180.png">
     <link rel="manifest" href="sedona.webmanifest">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
   </head>
 
   <body class="page__body body-content">
@@ -148,7 +150,7 @@
           </fieldset>
 
           <fieldset class="review-form__group form-group form-group--sights">
-            <legend class="form-group__title title">Посещенные достопримечательности:</legend>
+            <legend class="form-group__title title">Посещенные<br>&nbsp;достопримечательности:</legend>
 
             <ul class="form-group__list field-list">
               <li class="form-group__item checkbox">
@@ -243,18 +245,18 @@
       </div>
     </footer>
 
-    <section class="message message--error">
+    <section class="message message--error hidden">
       <div class="message__wrapper">
-        <h2 class="message__title title">Что-то пошло не так!</h2>
+        <h2 class="message__title title">Что-то пошло&nbsp;<br>не так!</h2>
         <p class="message__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         <button class="button" type="button">OK</button>
       </div>
     </section>
 
-    <section class="message message--success">
+    <section class="message message--success hidden">
       <div class="message__wrapper">
         <h2 class="message__title title">Ваш отзыв отправлен!</h2>
-        <p class="message__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <p class="message__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.&nbsp;<br>В ближайшее время мы опубликуем его на сайте.</p>
         <button class="button" type="button">Закрыть окно</button>
       </div>
     </section>
